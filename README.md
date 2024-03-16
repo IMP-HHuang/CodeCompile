@@ -1,4 +1,5 @@
 # [MakeFile](https://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/)
+	- 直接make的时候默认只执行第一个目标，及其依赖
 
 ```
 #注释
