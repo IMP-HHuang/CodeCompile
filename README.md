@@ -15,4 +15,9 @@ OBJ = hellomake.o hellofunc.o
 
 hellomake: $(OBJ)
 	$(CC) -o $@ $^ $(CFLAGS)
+#.PHONY :声明一些伪目标,告诉 Make 不要将其视为实际文件，而是作为目标来执行
+.PHONY: clean
+
+clean
+	rm -f $(ODIR)/*.o *~ core $(INCDIR)/*~
 ```
